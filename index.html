@@ -3,73 +3,384 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devshree Pareek — Personal Profile</title>
+  <meta name="description" content="Portfolio of Yashvi shah, a second-year B.Tech student in Artificial Intelligence and Data Science at JECRC University.">
+  <title>Yashvi shah — Personal Profile</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("portfolio-theme") === "dark") {
+          document.documentElement.classList.add("theme-dark");
+        }
+      } catch (error) {
+        /* localStorage may be unavailable */
+      }
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary">
+      <a class="nav-brand" href="#main-content">Yashvi shah</a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#weather-ai">Weather &amp; AI</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="hero">
-      <h1>Devshree Pareek</h1>
-      <p class="tagline">B.Tech Student - Artificial Intelligence and Data Science</p>
+    <section class="hero" aria-labelledby="hero-heading">
+      <p class="hero-kicker">JECRC University</p>
+      <h1 id="hero-heading">Yashvi shah</h1>
+      <p class="tagline">Second-year B.Tech student in Artificial Intelligence and Data Science</p>
+      <p class="hero-lead">Building practical projects across web development, AI concepts, and campus-focused tools — one honest iteration at a time.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-secondary" href="https://github.com/devshreepareek831-blip" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
     </section>
 
-    <section id="about" class="content-section">
-      <h2>About</h2>
-      <p>
-        I am a B.Tech student specializing in Artificial Intelligence and Data Science.
-        I am learning programming, web development, and AI technologies while building
-        practical projects.
-      </p>
-      <p class="contact-line">
-        Email: not added yet.
-      </p>
-    </section>
+    
+<section id="about" class="content-section">
+  <h2>About</h2>
+  <p>
+    Hi, I'm Yashvi Shah, a second-year B.Tech student specializing in
+    Artificial Intelligence and Data Science at JECRC University, Jaipur.
+    I am passionate about technology, software development, and exploring
+    how AI and data-driven approaches can solve real-world problems.
+  </p>
+  <p>
+    My interests include AI, Data Science, logical problem-solving, and
+    building practical, user-friendly applications. Through academic
+    projects and initiatives such as MindMesh at the Smart India Hackathon,
+    I am learning to turn ideas into meaningful technological solutions.
+  </p>
+  <p>
+    I value teamwork, leadership, creativity, and continuous learning.
+    I enjoy collaborating with others, exploring new technologies, and
+    developing solutions that address real community needs. My goal is
+    to strengthen my technical skills and contribute to impactful projects.
+  </p>
+  <p>
+    I am based in Jaipur and open to suitable internship opportunities
+    where I can learn, contribute, and grow as a technology professional.
+  </p>
+</section>
 
-    <section id="skills" class="content-section">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Python (learning)</li>
+
+<section id="skills" class="content-section">
+  <h2>Skills</h2>
+  <p class="section-intro">
+    Technical and professional skills developed through coursework,
+    personal projects, and collaborative initiatives.
+  </p>
+
+  <ul class="skills-grid">
+    <li class="skill-card">
+      <h3>Python</h3>
+      <p>Writing programs, working with data, and developing problem-solving skills through programming practice.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>C and C++</h3>
+      <p>Building programming fundamentals, understanding logic, and practicing structured problem-solving.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>HTML and CSS</h3>
+      <p>Creating structured web pages and designing clean, responsive user interfaces.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>JavaScript</h3>
+      <p>Adding interactivity, input handling, and dynamic functionality to web applications.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Artificial Intelligence</h3>
+      <p>Exploring AI concepts and their applications in practical projects and real-world problem-solving.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Data Science</h3>
+      <p>Learning statistical concepts, data analysis, and data-driven approaches to understanding problems.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>NumPy and pandas</h3>
+      <p>Exploring Python libraries used for numerical computing, data manipulation, and analysis.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Statistics</h3>
+      <p>Understanding statistical concepts that support data interpretation and analytical thinking.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Prompt Engineering</h3>
+      <p>Writing clear instructions for AI tools and refining prompts to improve the usefulness of results.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Problem Solving</h3>
+      <p>Breaking complex tasks into manageable steps, applying logical thinking, and debugging solutions.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Leadership and Teamwork</h3>
+      <p>Collaborating with teammates, sharing ideas, coordinating tasks, and contributing to shared goals.</p>
+    </li>
+
+    <li class="skill-card">
+      <h3>Project Development</h3>
+      <p>Planning project ideas, building prototypes, testing functionality, and improving user experience.</p>
+    </li>
+  </ul>
+</section>
+
+
+<section id="projects" class="content-section">
+  <h2>Projects</h2>
+  <p class="section-intro">
+    Selected projects demonstrating web development, problem-solving,
+    and technology-driven ideas.
+  </p>
+
+  <div class="project-toolbar">
+    <label class="project-search-label" for="project-search">
+      Search projects
+    </label>
+    <div class="project-search-row">
+      <input
+        id="project-search"
+        class="project-search-input"
+        type="search"
+        placeholder="Search projects..."
+        autocomplete="off"
+        aria-describedby="project-search-hint"
+      >
+      <button
+        type="button"
+        class="btn btn-secondary"
+        id="open-project-search"
+      >
+        Open search
+      </button>
+    </div>
+    <p id="project-search-hint" class="search-hint">
+      Search by project name, description, or technology.
+    </p>
+  </div>
+
+  <p id="project-filter-status" class="filter-status" hidden></p>
+  <p id="project-empty" class="empty-state" hidden>
+    No projects match that search.
+    <button type="button" class="text-button" id="show-all-projects">
+      Show All Projects
+    </button>
+  </p>
+
+  <ul class="projects-grid">
+
+    <li class="project-card"
+      data-title="Sehkar Seva"
+      data-description="Cooperative services platform connecting communities with skilled workers."
+      data-tags="cooperative services platform community booking">
+      <div class="project-card-top">
+        <h3>Sehkar Seva</h3>
+      </div>
+      <p class="project-desc">
+        Sehkar Seva is a cooperative digital services platform concept
+        designed to connect people who need household and community
+        services with skilled workers. Proposed features include worker
+        registration, skill profiles, service requests, location-based
+        matching, booking, and feedback. The goal is to make service
+        discovery easier while supporting local workers and cooperation.
+      </p>
+      <ul class="tag-list">
+        <li>Cooperative Platform</li>
+        <li>Service Matching</li>
+        <li>Community Impact</li>
+      </ul>
+    </li>
+
+    <li class="project-card"
+      data-title="Reading List App"
+      data-description="Book management app with reading status, filters, duplicate prevention, deletion, and summary counts."
+      data-tags="HTML CSS JavaScript web application books">
+      <div class="project-card-top">
+        <h3>Reading List App</h3>
+      </div>
+      <p class="project-desc">
+        A web application for organizing books and tracking reading
+        progress. Users can add titles, update reading status, filter
+        the list, and remove books. It also includes input validation,
+        duplicate-title prevention, title-length limits, and summary
+        counts.
+      </p>
+      <ul class="tag-list">
         <li>HTML</li>
         <li>CSS</li>
-        <li>JavaScript (learning)</li>
-        <li>Artificial Intelligence and Data Science</li>
+        <li>JavaScript</li>
       </ul>
-    </section>
+      <p class="project-links">
+        <a href="https://reading-list-app-inky.vercel.app"
+           target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <a href="https://github.com/devshreepareek831-blip/reading-list-app"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </li>
 
-    <section id="projects" class="content-section">
-      <h2>Projects</h2>
-      <ul class="projects-list">
-        <li>
-          <strong>Personal Portfolio Website</strong>
-          <p class="project-desc">Built using HTML, CSS and JavaScript.</p>
-          <p class="project-desc">Project link not added yet.</p>
-        </li>
-        <li>
-          <strong>Interactive Quiz App</strong>
-          <p class="project-desc">A beginner web development project.</p>
-          <p class="project-desc">Project link not added yet.</p>
-        </li>
+    <li class="project-card"
+      data-title="Code With AI Quiz"
+      data-description="Interactive programming quiz with multiple-choice questions and score calculation."
+      data-tags="HTML CSS JavaScript quiz learning">
+      <div class="project-card-top">
+        <h3>Code With AI Quiz</h3>
+      </div>
+      <p class="project-desc">
+        An interactive learning application featuring multiple-choice
+        questions, answer evaluation, score calculation, and a Try Again
+        option. Built with HTML, CSS, and JavaScript.
+      </p>
+      <ul class="tag-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
       </ul>
+      <p class="project-links">
+        <a href="./Quiz/index.html"
+           target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </p>
+    </li>
+
+    <li class="project-card"
+      data-title="Factorial Calculator"
+      data-description="Interactive factorial calculator using JavaScript BigInt and input validation."
+      data-tags="JavaScript algorithms BigInt mathematics">
+      <div class="project-card-top">
+        <h3>Factorial Calculator</h3>
+      </div>
+      <p class="project-desc">
+        Calculates the factorial of a non-negative whole number in the
+        browser. It validates input and uses JavaScript BigInt to support
+        large integer results.
+      </p>
+      <ul class="tag-list">
+        <li>JavaScript</li>
+        <li>Algorithms</li>
+        <li>BigInt</li>
+      </ul>
+
+      <form id="factorial-form" class="factorial-form" novalidate>
+        <label for="factorial-input">
+          Enter a whole number (0–2000)
+        </label>
+        <div class="inline-form">
+          <input
+            id="factorial-input"
+            name="factorial"
+            type="text"
+            inputmode="numeric"
+            autocomplete="off"
+            aria-describedby="factorial-status"
+          >
+          <button type="submit" class="btn btn-primary">
+            Calculate
+          </button>
+        </div>
+        <p id="factorial-status" class="form-status" role="status"></p>
+      </form>
+    </li>
+
+  </ul>
+</section>
+
+
+
+    <section id="weather-ai" class="content-section">
+      <h2>Weather &amp; AI</h2>
+      <p class="section-intro">Two small client-side demos: live weather from Open-Meteo, and a local question helper about this portfolio.</p>
+
+      <div class="tools-grid">
+        <article class="tool-card" aria-labelledby="weather-heading">
+          <h3 id="weather-heading">Weather</h3>
+          <p>Look up current conditions for a city using Open-Meteo’s public geocoding and forecast APIs. No API key is used.</p>
+          <form id="weather-form" class="stacked-form">
+            <label for="weather-city">City</label>
+            <div class="inline-form">
+              <input id="weather-city" name="city" type="text" autocomplete="address-level2" placeholder="For example, Jaipur">
+              <button type="submit" class="btn btn-primary">Get Weather</button>
+            </div>
+          </form>
+          <div id="weather-result" class="weather-result" role="status" aria-live="polite">
+            <p class="muted">Enter a city to see current temperature, conditions, humidity, and wind when the APIs return them.</p>
+          </div>
+          <p class="attribution">Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>.</p>
+        </article>
+
+        <article class="tool-card" aria-labelledby="assistant-heading">
+          <h3 id="assistant-heading">Ask My Portfolio Assistant</h3>
+          <p class="demo-note">Local demo: answers come from a response map on this page, not a connected AI model.</p>
+          <form id="assistant-form" class="stacked-form">
+            <label for="assistant-question">Question</label>
+            <div class="inline-form">
+              <input id="assistant-question" name="question" type="text" autocomplete="off" placeholder="Ask about skills, projects, or tools">
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+          <div class="preset-row" aria-label="Example questions">
+            <button type="button" class="chip" data-question="What skills are you learning?">Skills</button>
+            <button type="button" class="chip" data-question="Tell me about your projects.">Projects</button>
+            <button type="button" class="chip" data-question="What is the Reading List App?">Reading List</button>
+            <button type="button" class="chip" data-question="How can I contact you?">Contact</button>
+          </div>
+          <div id="assistant-output" class="assistant-output" role="status" aria-live="polite">
+            <p class="muted">Try a question about my studies, skills, or a specific project.</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Devshree Pareek. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Yashvi shah. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="https://github.com/devshreepareek831-blip" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a id="email-button" class="email-button" hidden href="#">Email</a>
+    </p>
   </footer>
 
+  <div
+    id="project-search-dialog"
+    class="search-dialog"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="search-dialog-title"
+  >
+    <div class="search-dialog-backdrop" data-close-search="true"></div>
+    <div class="search-dialog-panel" role="document">
+      <div class="search-dialog-header">
+        <h2 id="search-dialog-title">Search projects</h2>
+        <button type="button" class="icon-button" id="close-search-dialog" aria-label="Close search">Close</button>
+      </div>
+      <label class="visually-hidden" for="dialog-search-input">Search project titles, descriptions, and tags</label>
+      <input id="dialog-search-input" class="project-search-input" type="search" placeholder="Type to search" autocomplete="off">
+      <ul id="dialog-search-results" class="dialog-results"></ul>
+      <p id="dialog-empty" class="empty-state" hidden>
+        No projects match that search.
+        <button type="button" class="text-button" id="dialog-show-all">Show All Projects</button>
+      </p>
+    </div>
+  </div>
+
   <script src="script.js" defer></script>
-  <button id="themeToggle">Switch to Dark Mode</button>
+  <button type="button" id="themeToggle">Switch to Dark Mode</button>
 </body>
 </html>

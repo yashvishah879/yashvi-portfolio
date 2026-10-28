@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code With AI Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-container">
+    <header>
+      <h1>Code With AI Quiz</h1>
+      <p class="progress" id="progress" aria-live="polite"></p>
+    </header>
+
+    <section id="quiz-screen" class="quiz-screen">
+      <h2 id="question-text" class="question-text"></h2>
+      <ul id="options-list" class="options-list" role="list"></ul>
+    </section>
+
+    <section id="results-screen" class="results-screen hidden" aria-live="polite">
+      <h2>Quiz Complete</h2>
+      <p id="score-text" class="score-text"></p>
+      <button type="button" id="restart-btn" class="restart-btn">Try Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
